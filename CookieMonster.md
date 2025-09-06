@@ -7,7 +7,7 @@ I SEE A LOGIN, so ofc I try ' OR '1'='1 in both fields... It takes me to this Ac
 Okay so its clear it has something to do with the cookies, lets go examine it...
 [CTRL + I  Then Application Tab] -
 
-So so our cookie looks a bit sus... Lets copy it and paste it into https://gchq.github.io/CyberChef/ 
+So our cookie looks a bit sus... Lets copy it and paste it into https://gchq.github.io/CyberChef/ 
 
 'cGljb0NURntjMDBrMWVfbTBuc3Rlcl9sMHZlc19jMDBraWVzXzJDODA0MEVGfQ%3D%3D'
 
@@ -15,5 +15,5 @@ At first glance cyberchef doesn't pick anything up, and you might not either. Bu
 
 Lets go back to Cyberchef and change that %3D%3D to == and the magic feature should automatically pick it up.
 
-
 Nice it did, just hit the magic icon next to the 'Output' and that converts it to your flag!
+
