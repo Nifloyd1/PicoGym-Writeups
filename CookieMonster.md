@@ -2,7 +2,7 @@ To start off we are given a little bit of background with the challenge descript
 
 When we load the page we see a login field requesting a Username and Password...
 
-I SEE A LOGIN, so ofc I try ' OR '1'='1 in both fields... It takes me to this an Access Denied page and refers back to the cookies...
+I SEE A LOGIN, so ofc I try ' OR '1'='1 in both fields... It takes me to this Access Denied page and refers back to the cookies...
 
 Okay so its clear it has something to do with the cookies, lets go examine it...
 [CTRL + I  Then Application Tab] -
@@ -14,5 +14,6 @@ So so our cookie looks a bit sus... Lets copy it and paste it into https://gchq.
 At first glance cyberchef doesn't pick anything up, and you might not either. But that ''%3D%3D" looks a little out of place, with a quick google search you can identify that its URL encoded and means == so our cookie is really base64 encoded. 
 
 Lets go back to Cyberchef and change that %3D%3D to == and the magic feature should automatically pick it up.
+
 
 Nice it did, just hit the magic icon next to the 'Output' and that converts it to your flag!
